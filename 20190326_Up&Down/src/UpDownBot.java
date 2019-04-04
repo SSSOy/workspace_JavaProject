@@ -2,7 +2,7 @@ import java.util.*;
 
 public class UpDownBot {
 	public static void main(String[] args) {
-		Random r = new Random();
+		//Random r = new Random();
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("<< UP & DOWN BOT >>\n");
@@ -10,8 +10,8 @@ public class UpDownBot {
 		int up = 1, down = 100;
 		
 		for(int i = 0; i < 10; i++) {
-			int num = r.nextInt((down - up + 1)) + up;
-			//int num = down - ((down - up)/2) - 1;
+			//int num = r.nextInt((down - up + 1)) + up;
+			int num = down - ((down - up)/2) - 1; // 최적화
 			System.out.println("당신이 생각한 숫자는 " + num + "입니다!(기회 " + (10-i) +"번)");
 			
 			System.out.println("Up : 1 / Down : 2 / Success : 3 ");
