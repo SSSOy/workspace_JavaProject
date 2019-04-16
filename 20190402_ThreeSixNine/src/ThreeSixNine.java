@@ -5,12 +5,13 @@ public class ThreeSixNine {
 		
 		System.out.println("<< 369°ÔÀÓ >>>");
 		
+		boolean t = false;
+		
 		for(int i = 1; i <= 100; i++) {
-			boolean t = false;
 			
 			if(i % 5 == 0) {
 				System.out.println("»Ñ¼õ!");
-				t = true;
+				continue;
 			}
 			else {
 				String s = Integer.toString(i);
