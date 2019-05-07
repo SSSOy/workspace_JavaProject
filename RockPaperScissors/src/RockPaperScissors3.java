@@ -15,7 +15,7 @@ public class RockPaperScissors3 {
 		System.out.println("<< 가위바위보 하나빼기 게임 >>\n");
 		
 		while(true) {
-			System.out.println("가위(1) 바위(2) 보(3) (2번 입력) : ");
+			System.out.println("가위(1) 바위(2) 보(3) (2번 입력, 종료 : 0) : ");
 			for(int i = 0; i < 2; i++) {
 				choice[i] = sc.nextInt();
 				if(choice[i] == 0) {
