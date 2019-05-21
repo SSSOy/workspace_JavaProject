@@ -15,6 +15,8 @@ public class GUITest5_ImageIcon {
 		ImageIcon smallBH = new ImageIcon(BBH.getImage().getScaledInstance(500, 500, Image.SCALE_DEFAULT));
 		JButton b = new JButton(smallBH);
 		
+		b.setRolloverIcon(BH);
+		b.setPressedIcon(BBH);
 		
 		panel.add(imageLabel);
 		panel.add(b);
