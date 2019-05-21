@@ -26,5 +26,4 @@ public class GUITest5_ImageIcon {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-
 }
