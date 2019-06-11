@@ -16,6 +16,8 @@ public class GUITest6_RSPGame {
 		JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
 		frame.setPreferredSize(new Dimension(400, 600));
+		panel.setLayout(new GridLayout(2, 1));
+		JPanel p = new JPanel();
 		
 		JLabel result = new JLabel("Win");
 		ImageIcon computerImage = new ImageIcon(fileName[1]);
@@ -52,6 +54,7 @@ public class GUITest6_RSPGame {
 		
 		panel.add(result);
 		panel.add(computerLabel);
+		panel.add(p);
 		panel.add(scissorsButton);
 		panel.add(rockButton);
 		panel.add(paperButton);
@@ -73,7 +76,7 @@ public class GUITest6_RSPGame {
 
 	private static int makeComputer() {
 		Random random = new Random();
-		int c = random.nextInt(3 - 1 + 1) + 1; // 1~3 임의의 수
+		int c = random.nextInt(3) + 1; // 1~3 임의의 수
 		return c;
 	}
 }
